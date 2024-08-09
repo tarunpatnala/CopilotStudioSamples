@@ -1,0 +1,27 @@
+name: run-test-tool
+
+on:
+  workflow_dispatch:
+    inputs:
+      tokenEndpoint:
+        required: false
+        description: "tokenEndpoint"
+      path:
+        required: false
+        description: "path"
+      verbose:
+        required: false
+        description: "verbose"
+
+jobs:
+  run-test-tool:
+    runs-on: windows-latest
+    name: test
+    steps:
+        - uses: actions/checkout@v2
+
+        - name: Execute bot test
+          shell: cmd
+          run: |
+            cd tool
+            .\PVATestFramework.exe test --tokenEndpoint "${{ github.event.tokenEndpoint }}" --path "${{ github.event.inputs.path }}" --verbose
