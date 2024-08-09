@@ -23,6 +23,5 @@ jobs:
         - name: Execute bot test
           shell: cmd
           run: |
-            cd PVATestFramework
-            cd tool
+            cd PVATestFramework/Tool/win-x64
             .\PVATestFramework.exe test --tokenEndpoint "${{ github.event.tokenEndpoint }}" --path "${{ github.event.inputs.path }}" --verbose
