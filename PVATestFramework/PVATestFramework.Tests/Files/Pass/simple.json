@@ -30,7 +30,7 @@
       "ChannelId": null,
       "Value": null,
       "TextFormat": null,
-      "Text": "<(^I'm sorry, I'm not sure how to help with that. Can you try rephrasing?$|^Hi there!$|^Good morning!$|^Whats up!$)>",
+      "Text": "I'm sorry, I'm not sure how to help with that. Can you try rephrasing?",
       "Attachments": null,
       "ReplyToId": null,
       "SuggestedActions": null,
