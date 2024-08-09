@@ -24,4 +24,4 @@ jobs:
           shell: cmd
           run: |
             cd PVATestFramework/Tool/win-x64
-            .\PVATestFramework.exe test --tokenEndpoint "${{ github.event.tokenEndpoint }}" --path "${{ github.event.inputs.path }}" --verbose
+            .\PVATestFramework.exe test --tokenEndpoint "${{ github.event.inputs.tokenEndpoint }}" --path "${{ github.event.inputs.path }}" --verbose
